@@ -5,6 +5,7 @@ compatibility_date = "2026-04-05"
 compatibility_flags = ["nodejs_compat"]
 
 [build]
+# 部署前需生成 schema manifest；CI 中会自动执行。
 command = "npm run schema:generate"
 
 [vars]
