@@ -30,6 +30,7 @@ id = "YOUR_KV_NAMESPACE_ID_HERE"
 [[r2_buckets]]
 binding = "FILES"
 # Legacy R2 bucket name kept intentionally; code/docs use Edgechat branding.
+# R2 is optional: CI 会检测账户是否开通 R2，未开通时自动移除该绑定并以降级模式部署（文件上传不可用）。
 bucket_name = "cfchat-files"
 
 [[durable_objects.bindings]]
