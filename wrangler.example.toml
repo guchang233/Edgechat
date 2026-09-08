@@ -61,4 +61,5 @@ run_worker_first = ["/api/*", "/files/*"]
 
 [triggers]
 # Cloudflare Cron 按 UTC 执行；19:00 UTC = 北京时间每天 03:00
+# 每日 GC（消息保留期清理）由 SCHEDULER Durable Object 按 cron 调度执行。
 crons = ["0 19 * * *"]
