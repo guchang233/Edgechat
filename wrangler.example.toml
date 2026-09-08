@@ -9,7 +9,7 @@ compatibility_flags = ["nodejs_compat"]
 command = "npm run schema:generate"
 
 [vars]
-ADMIN_USERNAMES = "gc"
+ADMIN_USERNAMES = "admin"
 MESSAGE_RETENTION_DAYS = "7"
 SOFT_DELETE_RETENTION_DAYS = "60"
 GC_BATCH_SIZE = "500"
